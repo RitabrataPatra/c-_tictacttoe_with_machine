@@ -78,17 +78,17 @@ int main() {
     for (int i = 0; i < 9; i++) {
         if (currentPlayer == 1) {
             // Player's turn
-            cout << "Your turn babyDoll!. Enter a slot (1-9): ";
+            cout << "Your turn !. Enter a slot (1-9): ";
             cin >> slot;
 
             if (slot < 1 || slot > 9) {
-                cout << "Invalid slot niger! Try again." << endl;
+                cout << "Invalid slot ! Try again." << endl;
                 i--; // Retry the same turn
                 continue;
             }
 
             if (!placeMarker(slot)) {
-                cout << "Slot already taken Stupid! Try again." << endl;
+                cout << "Slot already taken! Try again." << endl;
                 i--; // Retry the same turn
                 continue;
             }
@@ -104,7 +104,7 @@ int main() {
 
         if (winner != 0) {
             if (winner == 1) cout << "Congratulations! You win! You got lucky lil bro!!" << endl;
-            else cout << "Machine wins! Aap men nhi ho! LOLOLOLOLOL!!" << endl;
+            else cout << "Machine wins! LOLOLOLOLOL!!" << endl;
             break;
         }
 
@@ -112,7 +112,7 @@ int main() {
     }
 
     if (winner == 0) {
-        cout << "F**k , It's a draw!" << endl;
+        cout << " It's a draw!" << endl;
     }
 
     return 0;
